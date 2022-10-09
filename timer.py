@@ -21,7 +21,7 @@ class Timer:
         Arguments: only the timer object
         Return: None
         Who call it: the update schedule function
-        When will be calles: when a complete second passed
+        When will be called: when a complete second passed
         Functionality: Adding one second to the timer
         """
         # First case: We're in the second 59

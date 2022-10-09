@@ -60,10 +60,10 @@ class BoxLayoutExample(BoxLayout):
     b4_color = ColorProperty(BACKGROUND_COLOR)
 
     # Font sizes of the four buttons
-    b1_size = NumericProperty(15)
-    b2_size = NumericProperty(15)
-    b3_size = NumericProperty(15)
-    b4_size = NumericProperty(15)
+    b1_size = NumericProperty(42)
+    b2_size = NumericProperty(42)
+    b3_size = NumericProperty(42)
+    b4_size = NumericProperty(42)
 
     # Texts and colors for score & time bar
     score_text = StringProperty('')
