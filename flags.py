@@ -5,6 +5,7 @@ Contents:
     importings (one import)
     Class Country:
         Constructor
+    get_font_size function
     collect_flags function
     ALL_THE_COUNTRIES list
 """
