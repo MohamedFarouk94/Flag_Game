@@ -170,7 +170,6 @@ class BoxLayoutExample(BoxLayout):
         self.TOTAL_NUMBER = int(widget.value)
 
 
-
     def next_question(self):
         """
         Arguments: only the self object
@@ -204,8 +203,6 @@ class BoxLayoutExample(BoxLayout):
         for i in range(1,5):
             setattr(self, f'b{i}_text', wrong_names[i-1])
             setattr(self, f'b{i}_size', wrong_sizes[i-1])
-
-        print(f'{self.b1_size} {self.b2_size} {self.b3_size} {self.b4_size}')
 
 
     def check_answer(self, btn):
@@ -298,7 +295,7 @@ class BoxLayoutExample(BoxLayout):
 
         # If the NEXT_QUESTION_FLAG is on...
         if self.NEXT_QUESTION_FLAG:
-            self.NEXT_QUESTION_FLAG = False     # ...turn off the NEXT_QUESTION_FLAG first
+            self.NEXT_QUESTION_FLAG = False     # ...Turn off it
             # ...check if we're on the beginning of a new game
             # If so...
             if self.START_GAME_FLAG:
