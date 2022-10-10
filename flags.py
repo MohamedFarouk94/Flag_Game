@@ -2,7 +2,7 @@
 This file is responsible of creating all the country objects which contain
 country names and flags images sources.
 Contents:
-    importings (one import)
+    importings
     Class Country:
         Constructor
     get_font_size function
@@ -46,7 +46,7 @@ def get_font_size(name, name_splitted):
     When will be called: when the country object is created
     Functionality: Calculating a proper font size depending on the country name
     """
-    MAX_SIZE = 30 if platform in ['android', 'ios'] else 45     # Considering platform
+    MAX_SIZE = 28 if platform in ['android', 'ios'] else 45     # Considering platform
 
     if len(name_splitted) <= 3:
         return max(MAX_SIZE - len(name)//2, 15)
