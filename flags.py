@@ -68,9 +68,6 @@ def collect_flags():
     for i, flag in enumerate(os.listdir('Flags/')):
         ALL_THE_COUNTRIES.append(Country(i+1, flag))    # Constructing objects
 
-    # Printing number of countries for tracing. Comment if not needed
-    # print(f'Number of all countries: {len(ALL_THE_COUNTRIES)}')
-
     # Returning the list
     return ALL_THE_COUNTRIES
 

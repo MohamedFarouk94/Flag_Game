@@ -78,6 +78,7 @@ class TheGame(BoxLayout):
     END_GAME_FLAG = False           # Alarm to check if we've to end the game
     HALT = True     # Is the game on halt now?
 
+    # Importing methods from game_core
     from game_core import start_or_end, start_game, end_game, next_question
     from game_core import check_answer, on_slider
     from game_core import update_score_bar, update_timer_bar, update
@@ -90,9 +91,9 @@ class TheGame(BoxLayout):
         # Creating schedule update to be called every 1/FPS second
         Clock.schedule_interval(self.update, 1/self.FPS)
 
+
+
 # The class of the app that is written in the kivy file
-
-
 class TheFlagApp(App):
     pass
 
