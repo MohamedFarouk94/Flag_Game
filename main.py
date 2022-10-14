@@ -2,7 +2,7 @@
 This file is the main program
 Contents:
     imports
-    Class BoxLayoutExample:
+    Class TheGame:
         Static Variables
         Constructor
     Class TheFlagApp
@@ -25,7 +25,7 @@ if platform not in ['android', 'ios']:
 
 
 # The main class, inherits BoxLayout class
-class BoxLayoutExample(BoxLayout):
+class TheGame(BoxLayout):
 
     # Some constants, never changed
     BACKGROUND_COLOR = 4/256, 59/256, 92/256, 1     # Blue degree
@@ -70,7 +70,7 @@ class BoxLayoutExample(BoxLayout):
     CURRENT_QUESTION = 1    # Index of the current questions (starts from 1)
     USER_SCORE = 0          # Number of correctly-answered questions (so far)
     FRAME_COUNTER = 0       # Index of the current frame (restarted every second)
-    countries = []
+    countries = []          # Here the list of countries will be copied
 
     RIGHT_ANSWER_N = 0      # Index of the button that carries the right answer
     NEXT_QUESTION_FLAG = False      # Alarm to check if we've to move to next question
@@ -91,6 +91,8 @@ class BoxLayoutExample(BoxLayout):
         Clock.schedule_interval(self.update, 1/self.FPS)
 
 # The class of the app that is written in the kivy file
+
+
 class TheFlagApp(App):
     pass
 

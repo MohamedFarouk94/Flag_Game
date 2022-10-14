@@ -1,6 +1,6 @@
 """
 This file contains all the functions that should be imported to the
-BoxLayoutExample class and which are considered as the core of the game.
+TheGame class and which are considered as the core of the game.
 
 Contents:
     imports

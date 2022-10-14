@@ -1,6 +1,6 @@
-BoxLayoutExample:
+TheGame:
 
-<BoxLayoutExample>:
+<TheGame>:
     orientation: "vertical"
     spacing: '10dp'
 
@@ -78,13 +78,13 @@ BoxLayoutExample:
 
         Label:
             size_hint: 0.35, 1
-            text: 'Number of Questions\n                '+str(root.TOTAL_NUMBER)
+            text: 'Number of Questions\n                ' + str(root.TOTAL_NUMBER)
             font_size: '13dp'
 
         Button:
             text: root.start_end_switch
             font_size: '20dp'
-            size_hint: 0.3 ,1
+            size_hint: 0.3, 1
             background_color: root.BACKGROUND_COLOR
             on_press: root.start_or_end()
             canvas.before:
