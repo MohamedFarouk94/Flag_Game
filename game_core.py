@@ -92,7 +92,7 @@ def on_slider(self, widget):
     Functionality: Changing the total number of questions
     """
     # Casting the slider value always into integer
-    self.TOTAL_NUMBER = int(widget.value)
+    self.TOTAL_NUMBER = 5 * int(widget.value)
 
 
 def next_question(self):
